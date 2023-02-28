@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorent</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/trial.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <section id="service" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div #swiperRef="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card card-pack">
+                            <a href="package.html">
+                            <img src="images/packages/behzad-ghaffarian-nhWgZNV85LQ-unsplash.png" class="w-100">
+                            </a>
+                            <div class="m-3">
+                              <h6>1 BHK Basic Package for Bachelors</h6>
+                              <i class="fa-solid fa-bed"></i>
+                              <i class="fa-solid fa-couch"></i>
+                              <i class="fa-solid fa-table-picnic"></i>
+                              <div class="my-2 d-flex align-items-center">
+                                <i class="fa-solid fa-star gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-regular fa-star ms-2"></i>
+                                <p class="fw-bold mb-0 ms-2">4.0 <span class="text-muted">(2.233)</span></p>
+                              </div>
+                              <span>3,000/month</span>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card card-pack">
+                            <a href="package.html">
+                            <img src="images/packages/behzad-ghaffarian-nhWgZNV85LQ-unsplash.png" class="w-100">
+                            </a>
+                            <div class="m-3">
+                              <h6>1 BHK Basic Package for Bachelors</h6>
+                              <i class="fa-solid fa-bed"></i>
+                              <i class="fa-solid fa-couch"></i>
+                              <i class="fa-solid fa-table-picnic"></i>
+                              <div class="my-2 d-flex align-items-center">
+                                <i class="fa-solid fa-star gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-regular fa-star ms-2"></i>
+                                <p class="fw-bold mb-0 ms-2">4.0 <span class="text-muted">(2.233)</span></p>
+                              </div>
+                              <span>3,000/month</span>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card card-pack">
+                            <a href="package.html">
+                            <img src="images/packages/behzad-ghaffarian-nhWgZNV85LQ-unsplash.png" class="w-100">
+                            </a>
+                            <div class="m-3">
+                              <h6>1 BHK Basic Package for Bachelors</h6>
+                              <i class="fa-solid fa-bed"></i>
+                              <i class="fa-solid fa-couch"></i>
+                              <i class="fa-solid fa-table-picnic"></i>
+                              <div class="my-2 d-flex align-items-center">
+                                <i class="fa-solid fa-star gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-solid fa-star ms-2 gold-star"></i>
+                                <i class="fa-regular fa-star ms-2"></i>
+                                <p class="fw-bold mb-0 ms-2">4.0 <span class="text-muted">(2.233)</span></p>
+                              </div>
+                              <span>3,000/month</span>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">Slide 4</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </div>
+      </section>
+
+            <!-- script -->
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/all.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          centeredSlides: true,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+          .querySelector(".prepend-2-slides")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide([
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+          });
+        document
+          .querySelector(".prepend-slide")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide(
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+          });
+        document
+          .querySelector(".append-slide")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide(
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+          });
+        document
+          .querySelector(".append-2-slides")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide([
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+          });
+      </script>
+</body>
+</html>

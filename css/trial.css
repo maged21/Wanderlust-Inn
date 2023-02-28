@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background:#F9F9F9;
+    --primary:#004B80;
+    --secondary:#E8554E;
+    --heading:#000000;
+    --sub-heading:#9A9A9A;
+    --border:#DEDEDF;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #000000;
+}
+/* ---------------nav------------------------- */
+nav .input-group{
+    max-width: 400px;
+}
+
+.search-icon{
+    bottom: 10px;
+    right: 5px;
+}
+
+.icon{
+ color: var(--sub-heading);
+}
+
+.badge{
+    background-color: var(--secondary) !important;
+    border-radius: 20px;
+    font-size: 10px !important;
+}
+
+.active{
+    background-color: var(--background) !important;
+}
+
+.nav-btn{
+    color: var(--background) !important;
+    background-color: var(--primary) !important;
+}
+
+/* -------------------header--------------------- */
+#header{
+    background-color: #EFEFEF;
+}
+
+.box{
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.header-btn{
+    border: 1px solid var(--primary) !important;
+    color: var(--primary) !important;
+}
+.header-box{
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+}
+.why{
+    background-color: var(--secondary);
+    color: white;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    padding: 5px 32px;
+    border-radius: 0px 0px 10px 0;
+}
+
+/* ---------------------login/signup--------------- */
+.fp{
+    text-align: right !important;
+}
+
+.fp a{
+    text-decoration: none;
+}
+
+/* ---------------------services------------------- */
+.s-box{
+    padding: 30px;
+    background-color: var(--background);
+    min-height: 100%;
+}
+
+/* -----------------------packages------------------- */
+.card-pack{
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.gold-star{
+    color: gold;
+}
+
+
+
+/* renting */
+#renting{
+    background: var(--background);
+}
+#renting .box{
+    text-align: left;
+}
+
+/* review */
+.rev-card{
+    min-height: 100%;
+}
+.rev-img{
+    position: relative;
+}
+.img-r{
+    border: 8px solid #f2f2f2;
+    border-radius: 80px;
+}
+.coma{
+    position: absolute;
+    top: 0;
+    left: 33%;
+}
+
+.rev-span{
+    color: var(--secondary);
+}
+
+/* ----------------------footer-------------------- */
+#footer{
+    background-color: var(--background);
+}
+
+.p-foot{
+    position: relative;
+}
+.p-foot::before{
+    position: absolute;
+    content: '';
+    top: 5;
+    left: 0;
+    height: 15px;
+    width: 1px;
+    background-color: var(--sub-heading);
+}
+
+.span-foot{
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fa-facebook{
+    background-color: #435EA3;
+    color: white;
+}
+
+.ig{
+    background: linear-gradient(#DE953E,#7423C0);
+    color: white;
+    padding: 6;
+    border-radius: 20px;
+}
+
+.fa-linkedin{
+    background-color: #007DBD;
+    color: white;
+}
+
+.bread{
+    background-color: var(--background);
+    padding: 50px;
+}
+.home{
+    color: #2185D0 !important;
+}
+
+.form{
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sell-title{
+    background-color: var(--background);
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-wrapper{
+    transform: translate3d(0px,0,0) !important; 
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  .swiper-button-next{
+    background-color: white;
+    color: black !important;
+    padding: 25px;
+    border-radius: 20px;
+  }
