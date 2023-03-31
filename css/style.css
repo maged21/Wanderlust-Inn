@@ -17,6 +17,9 @@ body{
     font-family: 'Lato', sans-serif;
 }
 /* ---------------nav------------------------- */
+.logo{
+    width: 120px;
+}
 nav .input-group{
     max-width: 400px;
 }

@@ -17,6 +17,10 @@ body{
     font-family: 'Lato', sans-serif;
 }
 /* ---------------nav------------------------- */
+.logo{
+    width: 120px;
+}
+
 nav .input-group{
     max-width: 400px;
 }
@@ -254,4 +258,8 @@ nav .input-group{
 .otpsq{
     height: 50px;
     width: 40px !important;
+}
+
+.fa-location-pin{
+    color: var(--secondary);
 }
