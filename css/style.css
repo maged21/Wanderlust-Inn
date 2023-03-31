@@ -18,7 +18,7 @@ body{
 }
 /* ---------------nav------------------------- */
 .logo{
-    width: 120px;
+    width: 120px !important;
 }
 nav .input-group{
     max-width: 400px;
